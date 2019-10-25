@@ -1,4 +1,3 @@
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 Creates an AWS Lambda function to update Trusted Advisor
 on a scheduled interval using [truss-aws-tools](https://github.com/trussworks/truss-aws-tools).
 
@@ -22,6 +21,7 @@ module "trusted-advisor-refresh" {
 }
 ```
 
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Inputs
 
 | Name | Description | Type | Default | Required |
