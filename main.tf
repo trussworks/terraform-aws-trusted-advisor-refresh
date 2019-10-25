@@ -11,8 +11,9 @@
  * ## Usage
  *
  * ```hcl
- * module "trusted_advisor_refresh" {
- *   source = "../../modules/aws-trusted-advisor-refresh"
+ * module "trusted-advisor-refresh" {
+ *   source  = "trussworks/trusted-advisor-refresh/aws"
+ *   version = "1.0.0"
  *
  *   environment       = "prod"
  *   interval_minutes  = "5"
