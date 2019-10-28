@@ -1,4 +1,3 @@
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 Creates an AWS Lambda function to update Trusted Advisor
 on a scheduled interval using [truss-aws-tools](https://github.com/trussworks/truss-aws-tools).
 
@@ -7,6 +6,12 @@ Creates the following resources:
 * IAM role for Lambda function to access Trusted Advisor.
 * CloudWatch Event to trigger function on a schedule.
 * AWS Lambda function to actually call Trusted Advisor APIs.
+
+## Terraform Versions
+
+Terraform 0.12. Pin module version to ~> 2.0.0. Submit pull-requests to master branch.
+
+Terraform 0.11. Pin module version to ~> 1.0.0. Submit pull-requests to terraform011 branch.
 
 ## Usage
 
@@ -22,6 +27,7 @@ module "trusted-advisor-refresh" {
 }
 ```
 
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Inputs
 
 | Name | Description | Type | Default | Required |
