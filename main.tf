@@ -1,28 +1,3 @@
-/**
- * Creates an AWS Lambda function to update Trusted Advisor
- * on a scheduled interval using [truss-aws-tools](https://github.com/trussworks/truss-aws-tools).
- *
- * Creates the following resources:
- *
- * * IAM role for Lambda function to access Trusted Advisor.
- * * CloudWatch Event to trigger function on a schedule.
- * * AWS Lambda function to actually call Trusted Advisor APIs.
- *
- * ## Usage
- *
- * ```hcl
- * module "trusted-advisor-refresh" {
- *   source  = "trussworks/trusted-advisor-refresh/aws"
- *   version = "1.0.0"
- *
- *   environment       = "prod"
- *   interval_minutes  = "5"
- *   s3_bucket         = "lambda-builds-us-east-1"
- *   version_to_deploy = "1.0"
- * }
- * ```
- */
-
 locals {
   pkg  = "truss-aws-tools"
   name = "trusted-advisor-refresh"

@@ -28,14 +28,31 @@ module "trusted-advisor-refresh" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | ~> 0.12.0 |
+| aws | ~> 2.70 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | ~> 2.70 |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| cloudwatch\_logs\_retention\_days | Number of days to keep logs in AWS CloudWatch. | string | `"90"` | no |
-| environment | Environment tag, e.g prod. | string | n/a | yes |
-| interval\_minutes | How often to update Trusted Advisor. | string | `"60"` | no |
-| s3\_bucket | The name of the S3 bucket used to store the Lambda builds. | string | n/a | yes |
-| version\_to\_deploy | The version the Lambda function to deploy. | string | n/a | yes |
+|------|-------------|------|---------|:--------:|
+| cloudwatch\_logs\_retention\_days | Number of days to keep logs in AWS CloudWatch. | `string` | `90` | no |
+| environment | Environment tag, e.g prod. | `any` | n/a | yes |
+| interval\_minutes | How often to update Trusted Advisor. | `string` | `60` | no |
+| s3\_bucket | The name of the S3 bucket used to store the Lambda builds. | `string` | n/a | yes |
+| version\_to\_deploy | The version the Lambda function to deploy. | `string` | n/a | yes |
+
+## Outputs
+
+No output.
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
