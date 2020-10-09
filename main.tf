@@ -38,6 +38,7 @@ data "aws_iam_policy_document" "main" {
     effect = "Allow"
 
     actions = [
+      "logs:CreateLogGroup",
       "logs:CreateLogStream",
       "logs:PutLogEvents",
     ]
