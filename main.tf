@@ -73,6 +73,9 @@ resource "aws_iam_role_policy" "main" {
   role = aws_iam_role.main.id
 
   policy = data.aws_iam_policy_document.main.json
+
+  # set the key, else empty string
+  kms_key_id = var.cloudwatch_encryption_key_arn
 }
 
 #
