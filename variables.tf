@@ -24,3 +24,8 @@ variable "version_to_deploy" {
   type        = string
 }
 
+variable "cloudwatch_encryption_key_arn" {
+  description = "The arn of the encryption key to be used for the cloudwatch logs"
+  type        = string
+  default     = ""
+}
