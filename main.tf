@@ -103,6 +103,9 @@ resource "aws_cloudwatch_log_group" "main" {
     Name        = "${local.name}-${var.environment}"
     Environment = var.environment
   }
+
+  # set the key, else empty string
+  kms_key_id = var.cloudwatch_encryption_key_arn
 }
 
 #
