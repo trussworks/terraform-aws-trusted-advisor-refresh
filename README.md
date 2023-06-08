@@ -7,12 +7,6 @@ Creates the following resources:
 * CloudWatch Event to trigger function on a schedule.
 * AWS Lambda function to actually call Trusted Advisor APIs.
 
-## Terraform Versions
-
-Terraform 0.13 and later. Pin module version to ~> 3.0.0. Submit pull-requests to master branch.
-
-Terraform 0.12. Pin module version to ~> 2.0.0. Submit pull-requests to terraform012 branch.
-
 ## Usage
 
 ```hcl
